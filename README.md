@@ -1,11 +1,12 @@
 # widget_datetime
 
+A big thanks to Learning Health to produce this widget. This widget manage the Date (and do that correctly over all the time zone : the July 24 will be July 24 over all time zone, and you will have July 24 in your database) and manage the date and the time. Two methods exist for the time point of view : the ABSOLUTE and the TIMEZONE.
 
 This widget can manage 3 different behavior 
 --------------------------------------------
-* Date Day : only the date can be selected by the user. The date widget return the date as July 24 2016 00:00:00 and this time is saved in the database.
-* Date Time Absolute : user want to give an absolute time, like Oct 19 / 10:30 am. This time will be the same over all time zone : if you give this time at San Francisco, open the task at New York or a Grenoble : you will see this time 19/10/2016 10:30. In the database, this is the time saved.
-* Date Time Zone : user want to give a time, and when you access it, it should be translated in your time zone. Example, I select July 8 2016 10:00 am in San Franciso, a guy in New York will see then July 8 2016 1:00 pm. A guy in Paris will see July 8 2016 07:00 pm
+* DAY: Only the date can be selected by the user. The date widget return the date as July 24 2016 00:00:00 and this time is saved in the database.
+* ABSOLUTE : user want to give an absolute time, like Oct 19 / 10:30 am. This time will be the same over all time zone : if you give this time at San Francisco, open the task at New York or a Grenoble : you will see this time 19/10/2016 10:30. In the database, this is the time saved.
+* TIMEZONE : user want to give a time, and when you access it, it should be translated in your time zone. Example, I select July 8 2016 10:00 am in San Franciso, a guy in New York will see then July 8 2016 1:00 pm. A guy in Paris will see July 8 2016 07:00 pm
 
 This properties is set in the widget definition : DAY, ABSOLUTE, TIMEZONE.
 
